@@ -1,0 +1,19 @@
+.container{
+    color: white;
+    display: grid;
+    grid-template-columns:400px auto auto;
+    grid-column-gap: 5px;
+}
+
+.container > div{
+    background-color: blueviolet;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+.grid1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+
+     <style>
+
+    .navbar{
+        background-color: cadetblue;
+        padding: 1% 7%;
+        text-align: center;
+    }
+    
+    .navbar a{
+        text-decoration: none;
+        color: white;
+        font-size: larger;
+        padding: 10px 10px;
+    }
+
+    .container{
+        display: inline;
+        position: relative;
+    }
+
+    .content{
+        position: absolute;
+        width: 80px;
+        top: 25px;
+        right: 0px;
+        background-color: turquoise;
+        display: none;
+    }
+
+    .content a{
+        display: block;
+    }
+
+    .container:hover .content{
+      display: block;
+    }
+
+    .content a:hover{
+        background-color: thistle;
+    }
+     </style>
+
+</head>
+<body>
+    <div class="navbar">
+
+     <a href="#">Home</a>
+     <a href="#">Tutorial</a>
+     <div class="container">
+        <a href="#">Contact</a>
+        <div class="content">
+            <a href="#">Email</a>
+        <a href="#">Phone</a>
+        </div>
+     </div>
+     <a href="#">Support</a>
+    </div>
+</body>
+</html>
